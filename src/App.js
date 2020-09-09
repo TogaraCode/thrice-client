@@ -29,7 +29,7 @@ function SearchRow() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`${process.env.REACT_APP_SERVER}/${userSearchTerms}`)
+    fetch(`${process.env.REACT_APP_SERVER}/search/${userSearchTerms}`)
       .then((res) => res.json())
       .then((res) => setResults(res));
   };
