@@ -43,24 +43,32 @@ function SearchRow() {
     setUserSearchTerms(e.target.value);
   };
   return (
-    <div className="row">
-      <form onSubmit={handleSubmit}>
-        <input value={userSearchTerms} onChange={handleChange} />
-      </form>
-      <ul className="row__posters">
-        {results.map((r) => (
-          <img
-            id={r.id}
-            onClick={handleClick}
-            className="row__poster"
-            src={r.thumbnails.high.url}
-            alt=""
+    <div>
+      <div className="row">
+        <form onSubmit={handleSubmit}>
+          <input
+            value={userSearchTerms}
+            onChange={handleChange}
+            className="search"
+            placeholder="search my friend"
           />
-        ))}
-      </ul>
-      {selectedVideoId && (
-        <Youtube onBlur={handleBlur} VideoId={selectedVideoId} opts={opts} />
-      )}
+          <button className="search-button">Search</button>
+        </form>
+        <ul className="row__posters">
+          {results.map((r) => (
+            <img
+              id={r.id}
+              onClick={handleClick}
+              className="row__poster"
+              src={r.thumbnails.high.url}
+              alt=""
+            />
+          ))}
+        </ul>
+        {selectedVideoId && (
+          <Youtube videoId={selectedVideoId} onBlur={handleBlur} opts={opts} />
+        )}
+      </div>
     </div>
   );
 }
@@ -68,6 +76,14 @@ function SearchRow() {
 function App() {
   return (
     <div className="App">
+      <div className="header">
+        {" "}
+        <img
+          src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60"
+          className="logo"
+        />{" "}
+        <h1>Thrice</h1>
+      </div>
       <SearchRow />
       <SearchRow />
       <SearchRow />
