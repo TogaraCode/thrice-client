@@ -50,7 +50,7 @@ function SearchRow() {
             value={userSearchTerms}
             onChange={handleChange}
             className="search"
-            placeholder="search my friend"
+            placeholder="Search bar......"
           />
           <button className="search-button">Search</button>
         </form>
@@ -78,11 +78,7 @@ function App() {
     <div className="App">
       <div className="header">
         {" "}
-        <img
-          src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60"
-          className="logo"
-        />{" "}
-        <h1>Thrice</h1>
+        <img src="../togaraNerdsIcon.jpg" className="logo" /> <h1>Thrice</h1>
       </div>
       <SearchRow />
       <SearchRow />

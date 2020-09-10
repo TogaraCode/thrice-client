@@ -6,9 +6,10 @@ body {
 .row {
   color: white;
   border-style: solid;
-  border-color: blue;
+  border-color: #002a4a;
+  border-width: thin;
   margin-left: 20px;
-  height: 25vh;
+  height: 35vh;
   margin-top: 60px;
 }
 
@@ -44,18 +45,20 @@ body {
   opacity: 1;
 }
 .search {
-  width: 800px;
+  width: 1600px;
   height: 50px;
-  background-color: grey;
+  background-color: black;
+  border: 2px solid #002a4a;
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
+  color: #d4ecff;
 }
 
 .header {
   color: white;
   display: flex;
-  border: 10px solid grey;
+  border: 10px solid #002a4a;
   margin: 20px;
 }
 
@@ -64,8 +67,11 @@ img {
 }
 
 .search-button {
-  height: 50px;
+  height: 55px;
   width: 150px;
-  background-color: chocolate;
-  margin: 20px;
+  background-color: #d4ecff;
+
+  color: #002a4a;
+  font-weight: bold;
+  font-size: 30px;
 }
