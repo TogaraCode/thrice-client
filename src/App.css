@@ -9,7 +9,7 @@ body {
   border-color: #002a4a;
   border-width: thin;
   margin-left: 20px;
-  height: 28vh;
+  min-height: 30vh;
   margin-top: 0px;
 }
 
@@ -60,7 +60,6 @@ body {
   display: flex;
   border: 3px solid #002a4a;
   margin-top: 1px;
-  margin-left: 20px;
 }
 
 img {
