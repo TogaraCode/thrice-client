@@ -9,8 +9,8 @@ body {
   border-color: #002a4a;
   border-width: thin;
   margin-left: 20px;
-  height: 35vh;
-  margin-top: 60px;
+  height: 28vh;
+  margin-top: 0px;
 }
 
 .row__posters {
@@ -45,21 +45,22 @@ body {
   opacity: 1;
 }
 .search {
-  width: 1600px;
+  width: 1650px;
   height: 50px;
   background-color: black;
-  border: 2px solid #002a4a;
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
   color: #d4ecff;
+  border: 2px solid #002a4a;
 }
 
 .header {
   color: white;
   display: flex;
-  border: 10px solid #002a4a;
-  margin: 20px;
+  border: 3px solid #002a4a;
+  margin-top: 1px;
+  margin-left: 20px;
 }
 
 img {
@@ -70,8 +71,14 @@ img {
   height: 55px;
   width: 150px;
   background-color: #d4ecff;
-
   color: #002a4a;
   font-weight: bold;
   font-size: 30px;
+  border: 2px solid #8bcafc;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
 }
